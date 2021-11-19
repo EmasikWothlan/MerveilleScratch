@@ -70,3 +70,4 @@ print(c._solution.amount)
 c.fill_by(s2)
 print(c._solution.amount)
 
+
