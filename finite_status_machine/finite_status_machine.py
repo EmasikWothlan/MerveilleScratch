@@ -85,6 +85,8 @@ class FSM:
         else:
             print('undefined event, ignored.')
     
+    # this behave is actually using staticmethod, self is pass explicitly.
+    # there could be a way that you bound method by using MethodType.
     def behave(self):
         self._status.behavior(self, self._current_event)
             
