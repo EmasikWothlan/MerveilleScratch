@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Porta di ferro </title>
+</head>
+<body>
+<div class="main">
+    <h3> You are one step away from strerrata... </h3>
+    <form action="/" method="post">
+    {% csrf_token %}
+    <table class="log-in-table">
+        <tbody>
+        <tr>
+            <td> input your name: </td>
+            <td> <input type="text" name="username"> </td>
+        </tr>
+        <tr>
+            <td> input your invite code: </td>
+            <td> <input type="text" name="invite-code"> </td>
+        </tr>
+        <tr>
+            <td> <input type="submit" value="spinta"> </td>
+        </tr>
+        </tbody>
+    </table>
+    </form>
+</div>
+</body>
+</html>
